@@ -24,6 +24,7 @@ def two_sum(nums, target):
     for num in nums:
       goal = target - num
       if goal in nums:
+        # check to not reuse same num
         if not nums.index(num) == nums.index(goal):
           targetReached = True
           return [nums.index(num), nums.index(goal)]
