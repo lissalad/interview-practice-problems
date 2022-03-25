@@ -8,7 +8,7 @@
 # each input has exactly one solution
 # each element can be used once
 
-# PSUEDOCODE:
+# PSEUDOCODE:
 # create loop to repeat until target sum is reached
 # loop through nums. set goal for what would create the sum
 # if sum exists in nums list, and is not the same as the current num selected, return each index, break loop

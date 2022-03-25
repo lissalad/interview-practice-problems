@@ -16,7 +16,7 @@
 def longest_common_prefix(strs):
   reference = strs[0]
   prefix = ""
-  maybeMatched = True
+  maybe_matched = True
 
   for string in strs:
     if len(string) < len(reference):
@@ -24,16 +24,16 @@ def longest_common_prefix(strs):
   print(reference)
   
   for index in range(len(reference)):
-    maybeMatched = True
+    maybe_matched = True
     for string in strs:
       print(index)
       if not reference[index] == string[index]:
         # print(reference[index])
         # print(string[index])
         # print()
-        maybeMatched = False
+        maybe_matched = False
         break
-    if maybeMatched:
+    if maybe_matched:
       prefix += reference[index] 
     else:
       break

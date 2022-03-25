@@ -1,7 +1,9 @@
+#     https://leetcode.com/problems/palindrome-number/
+
 # PROBLEM:
 # given integer x, return true if it is a palindrome, otherwise false
 
-# PSUEDOCODE:
+# PSEUDOCODE:
 # convert x to string
 # loop through digits in string
 # if opposite ordered digit is equal to current digit, continue looping

@@ -3,7 +3,7 @@
 # PROBLEM: 
 # given a string of roman numerals, return the integer value
 
-# PSUEDOCODE:
+# PSEUDOCODE:
 # create dictionary of single character values
 # create dictionary of two character subtractive values
 # loop through string for subtractive values
