@@ -57,9 +57,9 @@ def valid_parenthesis(string):
 
     # is neither
     else:
-      print("BAD INPUT")
+      # print("BAD INPUT")
       return False
 
   return True
 
-print(valid_parenthesis("()[[]]"))
+print(valid_parenthesis(")"))
