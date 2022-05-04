@@ -14,20 +14,21 @@
 # if sum exists in nums list, and is not the same as the current num selected, return each index, break loop
 # otherwise start again using next num in list
 
+# seen = { value: index }
+# dictionaries FAST
+# range faster than enumerate
 
 def two_sum(nums, target):
-  sum = 0
-  goal = 0
-  targetReached = False
+  seen = { }
 
-  while not targetReached:
-    for num in nums:
-      goal = target - num
-      if goal in nums:
-        # check to not reuse same num
-        if not nums.index(num) == nums.index(goal):
-          targetReached = True
-          return [nums.index(num), nums.index(goal)]
+  for i, num in enumerate(nums):
+    goal = target - num
 
+    if goal in seen:
+      # return goal's index and num's index
+      return [seen[goal], i]
+    else:
+      # add new num to dictionary with its index
+      seen[num] = i
 
-print(two_sum([2, 7, 11, 15], 9))
+print(two_sum([3, 3], 6))

@@ -18,8 +18,17 @@ def average_letter(string):
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   sum = 0
   for letter in string:
-    sum += string.index(letter)
+    sum += alphabet.index(letter)
+    # print(alphabet.index(letter))
   index = sum // len(string)
   return alphabet[index]
 
-print(average_letter("abefg"))
+print(average_letter(""))
+
+# arthur:
+# could use string of alphabet instead tuple, space and time idk
+# good talking through
+# ask if letters in order
+# if you say things and leave gaps itll make me want to correct / give tips
+# good pseudocode
+# can round down with // but manual method shows deeper understanding

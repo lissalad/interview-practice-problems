@@ -9,7 +9,6 @@
 # loop from that index keep count of the non-space characters
 # when space is reached, return count
  
-
 def last_word_length(string):
   start = len(string) - 1
 
@@ -22,7 +21,6 @@ def last_word_length(string):
     end -= 1
   
   return start - end
-
 
 print(last_word_length("luffy is still joyboy"))
   
