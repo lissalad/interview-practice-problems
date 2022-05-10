@@ -14,14 +14,18 @@ def last_word_length(string):
 
   while string[start] == " ":
     start -= 1
-
+    if start == 0:
+      break
+  
   end = start
 
-  while not string[end] == " ":
+  while not string[end] == " " and not end == 0:
     end -= 1
+
+
   
   return start - end
 
-print(last_word_length("luffy is still joyboy"))
+print(last_word_length("cool"))
   
 

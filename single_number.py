@@ -9,18 +9,17 @@
 
 def single_number(nums):
   counts = {}
-  single = []
   
   for num in nums:
     if num in counts.keys():
-      counts[num] += 1
-      single.remove(num)
+      counts[num] -= 1
+      if counts[num] == 0:
+        counts.pop(num)
     else:
       counts[num] = 1
-      single.append(num)
-    # print(single)
+  print(counts)
   
-  return single[0]
+  return list(counts.keys())[0]
 
 print(single_number([2,2,1]))
 print(single_number([4,1,2,1,2]))
