@@ -8,19 +8,19 @@
 # only one constant extra space
 
 def single_number(nums):
-  counts = {}
-  
-  for num in nums:
-    if num in counts.keys():
-      counts[num] -= 1
-      if counts[num] == 0:
-        counts.pop(num)
-    else:
-      counts[num] = 1
-  print(counts)
-  
-  return list(counts.keys())[0]
+      counts = {}
 
+      for num in nums:
+        if num in counts.keys():
+          counts[num] += 1
+        else:
+          counts[num] = 1
+        # print(single)
+      
+      single = list(counts.values()).index(1)
+      number = list(counts.keys())[single]
+      return number
+  
 print(single_number([2,2,1]))
 print(single_number([4,1,2,1,2]))
 print(single_number([1]))
